@@ -1,0 +1,11 @@
+framework module ZHSocketTimer {
+  umbrella header "ZHSocketTimer.h"
+
+  export *
+  module * { export * }
+}
+
+module ZHSocketTimer.Swift {
+    header "ZHSocketTimer-Swift.h"
+    requires objc
+}

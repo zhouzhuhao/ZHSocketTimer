@@ -9,9 +9,9 @@
 import UIKit
 
 // 心跳的timer
-typealias PingCallBackBlock = ()->()
+public typealias PingCallBackBlock = ()->()
 
-class ZHSocketTimer: NSObject {
+public class ZHSocketTimer: NSObject {
 	
 	//  心跳异常次数
 	var errorCount:Int = 2
@@ -26,7 +26,7 @@ class ZHSocketTimer: NSObject {
 	var pingSuccessBlock:PingCallBackBlock?
 	var pingFailBlock:PingCallBackBlock?
 	
-	init(errorCount count:Int,timeInterval:TimeInterval) {
+	public init(errorCount count:Int,timeInterval:TimeInterval) {
 		super.init()
 		self.errorCount = count>0 ? count:self.errorCount
 		self.timeInterval = timeInterval>0 ? timeInterval:self.timeInterval
@@ -38,7 +38,7 @@ class ZHSocketTimer: NSObject {
 	}
 	
 	
-	func startPingTimer(sucessBlock:@escaping PingCallBackBlock,failBlock:@escaping PingCallBackBlock) -> Void {
+	public func startPingTimer(sucessBlock:@escaping PingCallBackBlock,failBlock:@escaping PingCallBackBlock) -> Void {
 		
 		self.pingSuccessBlock = sucessBlock
 		self.pingFailBlock = failBlock

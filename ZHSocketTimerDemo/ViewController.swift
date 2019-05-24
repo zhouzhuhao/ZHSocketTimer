@@ -8,13 +8,25 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+import ZHSocketTimer
 
+class ViewController: UIViewController {
+	
+
+	var timer:ZHSocketTimer!
+	
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		// Do any additional setup after loading the view.
+		
+		timer = ZHSocketTimer.init(errorCount: 5, timeInterval: 5)
+		timer.startPingTimer(sucessBlock: {
+			print("ping timer success")
+		}) {
+			print("ping timer failed")
+		}
+		
 	}
-
 
 }
 
