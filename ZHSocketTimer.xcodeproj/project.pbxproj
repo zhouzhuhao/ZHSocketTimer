@@ -13,6 +13,7 @@
 		52E98A502297DBAC00D683E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52E98A4E2297DBAC00D683E3 /* Main.storyboard */; };
 		52E98A522297DBAD00D683E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52E98A512297DBAD00D683E3 /* Assets.xcassets */; };
 		52E98A552297DBAD00D683E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52E98A532297DBAD00D683E3 /* LaunchScreen.storyboard */; };
+		52E98A5B2297E0B800D683E3 /* ZHSocketTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E98A5A2297E0B800D683E3 /* ZHSocketTimer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		52E98A512297DBAD00D683E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		52E98A542297DBAD00D683E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		52E98A562297DBAD00D683E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52E98A5A2297E0B800D683E3 /* ZHSocketTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZHSocketTimer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 			children = (
 				52E98A3C2297DB4B00D683E3 /* ZHSocketTimer.h */,
 				52E98A3D2297DB4B00D683E3 /* Info.plist */,
+				52E98A5A2297E0B800D683E3 /* ZHSocketTimer.swift */,
 			);
 			path = ZHSocketTimer;
 			sourceTree = "<group>";
@@ -147,6 +150,7 @@
 				TargetAttributes = {
 					52E98A382297DB4B00D683E3 = {
 						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
 					};
 					52E98A472297DBAC00D683E3 = {
 						CreatedOnToolsVersion = 10.2.1;
@@ -197,6 +201,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52E98A5B2297E0B800D683E3 /* ZHSocketTimer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,6 +361,7 @@
 		52E98A422297DB4B00D683E3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -372,6 +378,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.tscihk.iQH.ZHSocketTimer;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -380,6 +387,7 @@
 		52E98A432297DB4B00D683E3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
